@@ -1,5 +1,4 @@
 import random
-from typing import ByteString
 
 message = input("Enter message: ")
 fillers = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ,./;#[]!"£$%^&*()/?@'
@@ -26,7 +25,7 @@ y = len(fillers)
 for i in range(y):
     encryptedMessage = encryptedMessage.replace(fillers[i], ',')
     i += 1
-finArr = encryptedMessage.split(',')max is the ByteString
+finArr = encryptedMessage.split(',')
 finArr.pop()
 finArrlist = list(finArr)   
 
